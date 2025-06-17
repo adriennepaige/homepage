@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Cassia';
+    src: url('cassia.woff2') format('woff2'),
+        url('cassia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color:rgba(189, 90, 255, 0.285);
+    font-size: 20px;
+    font-family: 'Cassia', serif;
+}
+
+p {
+    background-color:#892be23f;
+    color:#000000;
+    text-align:center;
+    padding:10px;
+    margin:30px;
+
+    border:50px ridge rgb(255,60,190);
+}
+
+h1{
+    color:rgb(255, 60, 190);
+    border-top:5px dotted;
+    border-bottom:5px dotted;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+}
+
+h2{
+    font-family: 'libre baskerville', sans-serif;
+}
+
+strong{
+    color:rgb(255, 60, 190);
+    text-decoration:underline;
+}
+
+/* img elements are inline by default */
+img{
+    max-width:100%;
+}
+
+.special {
+    background-color:rgba(255, 60, 190, 0.445);
+    border: 5px inset rgba(255, 60, 190, 0.445);
+    font-family:'montserrat', sans-serif;
+}
+
+/* 
+Stylesheet Specificity 
+external < embedded < inline 
+*/
+
+header{
+    margin:20px;
+    padding:10px;
+    width:300px;
+    text-align: center;
+
+    background-color:rgb(255, 148, 234);
+}
+
+/* 
+Identifier Specificity 
+tag < class < id
+*/
+
+main{
+    margin:20px;
+    padding:10px;
+    width:300px;
+    text-align: center;
+
+    background-color:blue;
+}
+
+.class{
+    background-color:darkorchid;
+}
+
+#id{
+    background-color:deeppink;
+}
+
+/* 
+Location Specificity
+higher < lower
+*/
+
+footer{
+    margin:20px;
+    padding:10px;
+    width:300px;
+    text-align: center;
+
+    background-color:aliceblue;
+}
+
+footer{
+    background-color:orchid;
+}
