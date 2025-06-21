@@ -1,4 +1,100 @@
-body{
+
+.heading{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.heading1{
+    text-align: center;
+    text-transform: lowercase;
+    font-family: cursive;
+}
+
+body {
     background-color:rgb(209, 186, 229);
-    color:rgb(65, 21, 106)
+    color:rgb(65, 21, 106);
+
+    margin: 10px 0 0 0;
+    padding: 0 0 9px 0;
+}
+
+.container{
+    position: relative;
+    height: 600px;
+    width: 970px;
+    /* border: 1px solid black; */
+    margin: 50px auto 20px auto;
+
+    background-image: url("finder-ss.jpeg");
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+    background-position-x: center;
+    background-attachment: local;
+    background-size: contain;
+}
+
+.icon {
+    position: absolute;
+}
+
+#passion {
+    bottom: 30px;
+    right: 150px;
+}
+
+#journals {
+    top: 80px;
+    left: 250px;
+}
+
+#first-website {
+    bottom: 90px;
+    left: 400px;
+}
+
+
+.icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none !important; 
+    color: #000 !important; 
+    font-size: 16px;
+}
+
+
+.icon img {
+    display: block;
+    margin-bottom: 5px;
+    border: 5px solid white;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2))
+}
+
+.icon:hover {
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 5px rgba(144, 0, 255, 0.3));
+}
+
+.banner{
+  max-width: 100%;
+  margin: 0;
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: rgb(65, 21, 106);
+  text-transform: uppercase;
+}
+
+.banner p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: banner 8s linear infinite;
+}
+
+@keyframes banner {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(-100%, 0); }
 }
