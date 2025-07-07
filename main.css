@@ -57,6 +57,21 @@ body {
     left: 400px;
 }
 
+#structure {
+    bottom: 200px;
+    left: 120px;
+}
+
+#screensaver {
+    top: 110px;
+    right: 100px;
+}
+
+#final {
+    top: 200px;
+    right: 350px;
+}
+
 
 .icon a {
     display: flex;
