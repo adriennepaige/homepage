@@ -1,0 +1,55 @@
+img {
+    max-width:100%;
+}
+
+.margin-center {
+    background-color: coral;
+    padding: 10px;
+    max-width: 600px;
+    margin:0 auto;
+
+    /* if margin has 2 values, the first=top/bottom and the second=left/right */
+}
+   
+.translate-center {
+    background: lavenderblush;
+    padding: 10px;
+    max-width: 600px;
+
+    position: relative;
+    left: 50%;
+    /* top: 50%; */
+    /* transform: translate(-50%,-50%); */
+    translate: -50%;
+}
+
+.container {
+    background: lightblue;
+    padding: 10px;
+    display: flex;
+
+    /* flex direction determines the main and cross axis directions, which changes how our alignment properties work */
+
+    flex-direction:row;
+    justify-content: center;
+    /* align-items: center; */
+
+    /* align items is used for single line flexboxes */
+
+    flex-wrap:wrap;
+    align-content: center;
+
+    /* align contetn is used for multi-line wrapping flexboxes */
+
+    gap: 30px;
+    
+    height:400px;
+}
+
+.item {
+    background: lightpink;
+    padding:10px;
+    border: 1px solid;
+
+    width:200px;
+}

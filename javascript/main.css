@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(191, 158, 248, 0.327);
+    transition: background .5s;
+}
+
+.dark {
+    background: rgb(80, 65, 106);
+}
+
+img {
+    max-width: 100%;
+}
+
+.menu {
+    background: rgb(173, 176, 230);
+    position: fixed;
+    right: -300px;
+    top: 0;
+
+    width: 300px;
+    height: 100vh;
+
+    text-align: center;
+    padding: 20px;
+
+    font-size: 130%;
+    transition: right .5s, background .5s;
+}
+
+.active {
+    right: 0;
+}
+
+.gear {
+    background: rgb(173, 176, 230);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    transition: rotate .5s, background .5s;
+}
+
+.spin {
+    rotate: 180deg;
+}
+
+.glow {
+    background: rgb(229, 162, 220);
+}
